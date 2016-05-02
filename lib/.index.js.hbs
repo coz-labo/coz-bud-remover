@@ -4,15 +4,14 @@
  * @version {{pkg.version}}
  */
 
-"use strict";
+'use strict'
 
-
-var BudRemover = require('./bud_remover');
+const BudRemover = require('./bud_remover')
 
 function budRemover(config){
-    return new BudRemover(config);
+  return new BudRemover(config)
 }
 
-budRemover.budRemover = budRemover;
+budRemover.budRemover = budRemover
 
-module.exports = budRemover;
+module.exports = budRemover
