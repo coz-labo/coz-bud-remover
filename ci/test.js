@@ -12,5 +12,5 @@ const apeTesting = require('ape-testing')
 process.chdir(`${__dirname}/..`)
 
 apeTasking.runTasks('test', [
-  () => apeTesting.runNodeunit('test/*_test.js')
+  () => apeTesting.runMocha('test/*_test.js')
 ], true)

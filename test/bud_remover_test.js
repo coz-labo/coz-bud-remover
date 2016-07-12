@@ -5,29 +5,25 @@
 'use strict'
 const BudRemover = require('../lib/bud_remover.js')
 const fs = require('fs')
+const assert = require('assert')
 const mkdirp = require('mkdirp')
 
 const tmpDir = __dirname + '/../tmp'
 
-exports.setUp = function (done) {
+before(() => {
   mkdirp.sync(tmpDir)
-  done()
-}
+})
 
-exports.tearDown = function (done) {
-  done()
-}
-
-exports[ 'Bud remover' ] = function (test) {
-  var filename = tmpDir + '/work-file.txt';
-  fs.writeFile(filename, 'foo', function (err) {
-    test.ifError(err)
+it('Bud remover', (done) => {
+  let filename = tmpDir + '/work-file.txt';
+  fs.writeFile(filename, 'foo', (err) => {
+    assert.ifError(err)
     new BudRemover().remove({
       path: filename
     }, function (err) {
-      test.ifError(err)
-      test.done()
+      assert.ifError(err)
+      done()
     })
   })
-}
+})
 

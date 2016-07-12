@@ -1,21 +1,27 @@
 /**
  * Test case for removeBudRendered.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
 'use strict'
 
 const removeBudRendered = require('../lib/remove_bud_rendered.js')
+const assert = require('assert')
+const co = require('co')
 
-exports.setUp = function (done) {
-  done()
-}
+describe('remove-bud-rendered', function () {
+  this.timeout(3000)
 
-exports.tearDown = function (done) {
-  done()
-}
+  before(() => co(function * () {
 
-exports[ 'Remove bud rendered' ] = function (test) {
+  }))
 
-  test.done()
-}
+  after(() => co(function * () {
 
+  }))
+
+  it('Remove bud rendered', () => co(function * () {
+
+  }))
+})
+
+/* global describe, before, after, it */
