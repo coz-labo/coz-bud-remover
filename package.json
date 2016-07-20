@@ -1,6 +1,6 @@
 {
   "name": "coz-bud-remover",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Bud remover for coz.",
   "main": "lib",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coz-repo/coz-bud-remover.git"
+    "url": "git+https://github.com/coz-labo/coz-bud-remover.git"
   },
   "keywords": [
     "coz",
@@ -22,24 +22,24 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coz-repo/coz-bud-remover/issues"
+    "url": "https://github.com/coz-labo/coz-bud-remover/issues"
   },
-  "homepage": "https://github.com/coz-repo/coz-bud-remover#readme",
+  "homepage": "https://github.com/coz-labo/coz-bud-remover#readme",
   "dependencies": {
     "argx": "^2.0.2",
-    "async": "^1.5.2",
-    "coz-bud": "^3.0.0",
+    "async": "^2.0.0",
+    "coz-bud": "^3.0.2",
     "filedel": "^2.0.2"
   },
   "devDependencies": {
     "ape-covering": "^3.0.3",
-    "ape-releasing": "^4.0.1",
+    "ape-releasing": "*",
     "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.3",
+    "ape-tasking": "*",
     "ape-testing": "^4.0.1",
-    "ape-tmpl": "^5.0.12",
+    "ape-tmpl": "*",
     "ape-updating": "^4.0.4",
-    "coz": "^6.0.5",
+    "coz": "*",
     "injectmock": "^2.0.0",
     "mkdirp": "^0.5.1"
   },
