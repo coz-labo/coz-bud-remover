@@ -1,6 +1,6 @@
 {
   "name": "coz-bud-remover",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Bud remover for coz.",
   "main": "lib",
   "scripts": {
@@ -32,14 +32,13 @@
     "filedel": "^4.1.1"
   },
   "devDependencies": {
-    "amocha": "^5.0.2",
+    "amocha": "^7.0.1",
     "ape-releasing": "^5.0.7",
     "ape-tasking": "^4.0.12",
     "ape-tmpl": "^6.0.14",
     "ape-updating": "^5.0.3",
-    "coz": "^7.0.19",
-    "injectmock": "^2.0.0",
-    "mkdirp": "^0.5.1"
+    "coz": "^7.1.0",
+    "injectmock": "^2.0.0"
   },
   "engines": {
     "node": ">=8",
